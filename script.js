@@ -5,5 +5,19 @@ canvas.width = innerWidth
 canvas.height = innerHeight
 
 
-let bola = new Bola(canvas.width / 2, canvas.height / 2)
-bola.dibujar()
+let bolas = []
+
+for (let i = 0; i < 5; i++) {
+    bolas.push(new Bola (canvas.width / 2, canvas.height / 2))
+    
+}
+
+function animar(){
+    bolas.forEach(bola=>{
+        bola.dibujar()
+        bola.mover()
+    })
+    requestAnimationFrame(animar)
+}
+
+animar()
