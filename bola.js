@@ -6,7 +6,7 @@ class Bola{
         this.radio = 10
         this.dirY = (Math.random() * 2) - 1 
         this.dirX = (Math.random() * 2) - 1
-        this.velocidad = 200
+        this.velocidad = 25 
         
 
     }
@@ -21,6 +21,15 @@ class Bola{
     mover(){
         this.x += this.dirX * this.velocidad
         this.y += this.dirY * this.velocidad
+        
+        if(this.x + this.radio > canvas.width || this.x < 0){
+            this.dirX *= -1
+        }
+
+        if(this.y + this.radio > canvas.height || this.y < 0){
+            this.dirY *= -1
+        }
+
 
 
     }
