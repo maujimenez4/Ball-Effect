@@ -1,7 +1,7 @@
 # Ball-Effect
 Implementation of ball filter, using JavaScript and HTML
 
-##English
+## English
 # Ball Animation Project in Canvas
 
 This project implements an animation in JavaScript using the HTML `canvas` element, where multiple balls move and connect visually with a trailing effect. Each ball can bounce off the screen edges and includes distance-based logic to optimize the connection effect between them.
@@ -62,7 +62,7 @@ function createTrail(ball1, ball2) {
 If you have suggestions or would like to contribute, open an issue or submit a pull request. Contributions are welcome!
 
 
-##Español
+## Español
 # Proyecto de Animación de Bolas en Canvas
 
 Este proyecto implementa una animación en JavaScript usando el elemento `canvas` de HTML, donde múltiples bolas se mueven y se conectan visualmente con un efecto de rastro. Cada bola puede rebotar en los límites de la pantalla y cuenta con una lógica de distancia para optimizar el efecto de conexión entre ellas.
