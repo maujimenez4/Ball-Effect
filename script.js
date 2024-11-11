@@ -19,11 +19,20 @@ function animar(){
     bolas.forEach(bola=>{
 
         bolas.forEach(bola2 => {
-            ctx.beginPath()
-            ctx.moveTo(bola.x, bola.y)
-            ctx. lineTo(bola2.x, bola2.y)
-            ctx.stroke()
-            ctx.closePath()
+
+            let dx = bola2.x - bola.x
+            let dy = bola2.y - bola.y
+            let dist = Math.sqrt(Mdx ** 2 + dy ** 2)
+
+            if(dist < 300){
+                
+                ctx.beginPath()
+                ctx.moveTo(bola.x, bola.y)
+                ctx. lineTo(bola2.x, bola2.y)
+                ctx.stroke()
+                ctx.closePath()
+            }
+            
         })
 
         bola.dibujar()
